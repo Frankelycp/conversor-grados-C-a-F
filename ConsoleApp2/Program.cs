@@ -22,11 +22,17 @@ namespace ConsoleApp2
             double far = 0;
    
             grados = numero();
-            Console.WriteLine("Los grados Centigrados ingresados son " + grados + "°" + "\n");
-            double fa = ((9.0 / 5.0) * grados + 32);
-            Console.WriteLine("Los Grados Ingresados anteriormente convertidos a Fahrenheit son " + fa  +"°" + "\n" );
+            if (grados > 0)
+            {
+                Console.WriteLine("Los grados Centigrados ingresados son " + grados + "°" + "\n");
+                double fa = ((9.0 / 5.0) * grados + 32);
+                Console.WriteLine("Los Grados Ingresados anteriormente convertidos a Fahrenheit son " + fa + "°" + "\n");
+                Console.ReadKey();
+            }
+            else
+                Console.WriteLine("Ingrese un numero mayor a 0");
             Console.ReadKey();
-
         }
+ 
     }
 }
