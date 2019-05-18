@@ -30,7 +30,7 @@ namespace ConsoleApp2
                 Console.ReadKey();
             }
             else
-                Console.WriteLine("Ingrese un numero mayor a 0");
+                Console.WriteLine("Ingrese un numero mayor a 0 ");
             Console.ReadKey();
         }
  
